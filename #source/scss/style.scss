@@ -1,0 +1,250 @@
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/*--------------------*/
+
+* {
+  //border: 1px solid #0f0;
+}
+
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  //border: 5px solid rebeccapurple;
+}
+
+.background {
+  flex: 0 0 auto;
+  max-height: 200px;
+  overflow: hidden;
+}
+
+.background-image {
+  background-image: url("/img/Gym.png") center center cover;
+  width: 100%;
+  position: relative;
+}
+.header {
+  position: sticky;
+  top: 0px;
+  min-height: 80px;
+  background: #b91e35;
+  opacity: 95%;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+  box-shadow: 0 0 20px #000;
+  margin: 0 0 15px 0;
+  flex: 0 0 auto;
+}
+.title-container {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 30px;
+  color: #fff;
+  opacity: 100%;
+}
+
+.header-list {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+.header-item {
+  width: 20%;
+  border-left: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-link {
+  font-size: 20px;
+  color: #fff;
+}
+
+.main {
+  flex: 1 0 auto;
+  width: 95%;
+  margin: 20px auto;
+}
+
+.columns-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 -15px;
+  margin-bottom: 25px;
+}
+
+.general-column {
+  flex: 0 0 24%;
+  padding: 0 15px;
+  text-align: justify;
+  color: #444;
+}
+
+.trainers-container {
+  width: 100%;
+}
+.trainers-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+.trainer-block {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  position: relative;
+  top: 2px;
+  box-shadow: 0 0 2px #666;
+  transition: all 0.2s ease-out;
+  &:hover {
+    top: 0;
+    box-shadow: 0 3px 3px #666;
+  }
+}
+.trainer-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px 0 0;
+}
+.trainer-image-container {
+  background-color: #999;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.trainer-image {
+  width: 150px;
+}
+.trainer-title {
+  font-weight: 700;
+}
+.trainer-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.trainers-note {
+  line-height: 18px;
+}
+.trainer-link-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 10px;
+}
+
+.trainer-link {
+  background-color: #333;
+  color: #ccc;
+  padding: 5px 15px;
+  transition: all 0.3s ease-out;
+  box-shadow: 0 2px 2px #000;
+  position: relative;
+  border-radius: 5px;
+  &:hover {
+    color: #fff;
+    background-color: #bb3300;
+  }
+
+  &:active {
+    bottom: -3px;
+    box-shadow: 0 1px 1px #000;
+    background-color: #aa3333;
+  }
+}
+
+.footer {
+  flex: 0 0 auto;
+  height: 70px;
+  background-color: #b91e35;
+  opacity: 95%;
+}
